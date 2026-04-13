@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Lista de Tareas</h1>
+
+    <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Escribe una tarea...">
+        <button id="addBtn">Agregar</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="filters">
+        <button data-filter="all" class="active">Todos</button>
+        <button data-filter="pending">Pendientes</button>
+        <button data-filter="completed">Completadas</button>
+    </div>
+
+    <div class="footer">
+        <span id="pendingCount">0 pendientes</span>
+        <button id="clearCompleted">Limpiar completadas</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
